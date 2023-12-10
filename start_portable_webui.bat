@@ -44,7 +44,7 @@ REM Создаем временную копию файла config.json
 copy /Y config.json config_temp.json
 
 git init
-git remote add origin https://github.com/Em1tSan/NeuroGPT.git
+git remote add origin https://github.com/sm97/NeuroGPT.git
 git pull
 git checkout portable -f
 git branch --set-upstream-to origin/portable
