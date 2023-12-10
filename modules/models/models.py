@@ -56,6 +56,7 @@ class OpenAIClient(BaseLLMModel):
     def get_answer_at_once(self):
         response = self._get_response()
         response = json.loads(response.text)
+        print(response.text)
         content = response["choices"][0]["message"]["content"]
         total_token_count = response["usage"]["total_tokens"]
         return content, total_token_count
